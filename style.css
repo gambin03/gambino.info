@@ -236,10 +236,17 @@ body {
 }
 
 /* ---------------- REVIEWS ---------------- */
+/* ---------------- REVIEWS (fixed colors + hide extra text) ---------------- */
 #reviews {
   padding: 80px 10%;
   background-color: #1e1e1e;
   text-align: center;
+}
+
+#reviews h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: #00FF7F; /* keep heading green */
 }
 
 .review-cards {
@@ -250,30 +257,53 @@ body {
 }
 
 .review-card {
-  background-color: #222;
+  background-color: #222; /* dark card background */
   padding: 30px;
   border-radius: 8px;
   width: 280px;
   text-align: center;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  color: #bbb; /* body text color */
 }
 
 .review-card:hover {
   transform: translateY(-10px);
-  box-shadow: 0 15px 25px rgba(0, 255, 127, 0.2);
+  box-shadow: 0 15px 25px rgba(0, 255, 127, 0.12);
 }
 
 .review-card h3 {
   margin-bottom: 10px;
   font-size: 1.5rem;
-  color: #fff;
+  color: #00FF7F; /* client name / title uses green */
 }
 
 .review-card p {
   font-size: 1rem;
-  color: #bbb;
+  color: #bbb; /* ensure paragraph text is light gray, not white */
   margin-bottom: 20px;
 }
+
+/* hide the extra paragraph by default (fixes 'already pressed' look) */
+.read-more {
+  display: none;
+  color: #bbb;
+}
+
+/* read-more button styling (keeps green theme) */
+.read-more-btn {
+  background-color: #00FF7F;
+  padding: 10px 20px;
+  color: #121212;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.read-more-btn:hover {
+  background-color: #00CC66;
+}
+
 
 /* ---------------- FORM ---------------- */
 .form-container {
@@ -397,6 +427,7 @@ body {
     background-position: center top;
   }
 }
+
 
 
 
