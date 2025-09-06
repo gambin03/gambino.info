@@ -108,4 +108,8 @@ function validateForm() {
         section.classList.add('visible');
       }
     });
+
   });
+function toggleMenu() {
+  document.getElementById("navLinks").classList.toggle("active");
+}
