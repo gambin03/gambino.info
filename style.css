@@ -90,6 +90,10 @@ body {
   align-items: center;
   overflow: hidden;
 }
+.read-more {
+  display: none;  /* hide extra text by default */
+}
+
 
 .typing-container {
   font-size: 24px;
@@ -393,5 +397,6 @@ body {
     background-position: center top;
   }
 }
+
 
 
