@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="nav-bar">
+       <div class="home" > <a href="#home">Home</a></div>
+      <div class="about">  <a href="#about">About</a></div>
+      <div class="contact ">  <a href="#contact">Contact</a></div>
+   
+</div>
+<section id="home">
+<div id="main-cont1"> 
+    <div id="cont1"> 
+      <div class="intro-text"> I'm a </div>
+      <div class="typing-container" id="typed-title"></div>
+      <div class="cursor"></div>
+      </div>
+    <div id="cont2"><h3>Introduction</h3>
+        <h2>OVERVIEW</h2>
+        
+        <p>I'm passionate about crafting intuitive web 
+        experience and turning ideas into reality through code.With expertise in <strong>
+            HTML,CSS,JavaScript</strong> and <strong> React,
+        </strong>
+I bring creativity and precision to every project I undertake</p>
+    </div>
+</div>
+</section>
+<section id="about">
+    <div class="about-container">
+        <h1>About Me</h1>
+        <p>
+          Hi, I'm Benjamin, a passionate individual dedicated to creating exceptional web experiences. With expertise in modern web technologies and a strong eye for design, I strive to build user-friendly and visually appealing websites. 
+        </p>
+        <div class="skills">
+          <h2>My Skills</h2>
+          <div class="skill">
+            <p>HTML & CSS</p>
+            <div class="skill-bar">
+              <div class="skill-level" style="width: 95%; background-color: #4caf50;">95%</div>
+            </div>
+          </div>
+          <div class="skill">
+            <p>JavaScript (ES6+)</p>
+            <div class="skill-bar">
+              <div class="skill-level" style="width: 85%; background-color: #2196f3;">85%</div>
+            </div>
+          </div>
+          <div class="skill">
+            <p>React</p>
+            <div class="skill-bar">
+              <div class="skill-level" style="width: 80%; background-color: #ff9800;">80%</div>
+            </div>
+          </div>
+          <div class="skill">
+            <p>Responsive Design</p>
+            <div class="skill-bar">
+              <div class="skill-level" style="width: 90%; background-color: #9c27b0;">90%</div>
+            </div>
+          </div>
+        </div>
+      </div>
+</section>
+<section id="services">
+    <h2>My Services</h2>
+    <div class="service-cards">
+        <div class="service-card">
+            <h3>Web Development</h3>
+            <p>Building responsive, scalable, and high-performance websites that cater to your business needs.</p>
+        </div>
+        <div class="service-card">
+            <h3 id="h3">UI/UX Design</h3>
+            <p>Designing intuitive, attractive user interfaces and seamless user experiences for web and mobile applications.</p>
+        </div>
+        <div class="service-card">
+            <h3 id="h3">Performance Optimization</h3>
+            <p>Optimizing websites to enhance loading speed, responsiveness, and overall performance.</p>
+        </div>
+        <div class="service-card">
+            <h3 id="h3">JS & React Development</h3>
+            <p>Specializing in JavaScript and React for building interactive, modern web applications with excellent performance.</p>
+        </div>
+    </section>
+    <section id="reviews">
+        <h2>What Our Clients Say</h2>
+        <div class="review-cards">
+            <div class="review-card">
+                <h3>John Doe</h3>
+                <p>Benjamin's web development services are top-notch. He transformed our outdated website into a sleek, modern platform.</p>
+                <p class="read-more">
+                    His ability to optimize the performance of the site while keeping the user interface intuitive was impressive.  I highly recommend his services!
+                </p>
+                <button class="read-more-btn" onclick="toggleReadMore(this)">Read More</button>
+            </div>
+            <div class="review-card">
+                <h3>Jane Smith</h3>
+                <p>Working with Benjamin on our UI/UX design was an absolute pleasure. He understood our vision and brought it to life with creativity and precision.</p>
+                <p class="read-more">
+                    The interface is clean, user-friendly, and visually appealing.  We are excited to continue working with him in the future!
+                </p>
+                <button class="read-more-btn" onclick="toggleReadMore(this)">Read More</button>
+            </div>
+            <div class="review-card">
+                <h3>Michael Johnson</h3>
+                <p>Benjamin's React development skills are unparalleled. He built us a dynamic web application that runs flawlessly across all platforms.</p>
+                <p class="read-more">
+                    His deep understanding of React, JavaScript, and modern web technologies allowed him to create a robust, scalable app that performs exceptionally well.
+                </p>
+                <button class="read-more-btn" onclick="toggleReadMore(this)">Read More</button>
+            </div>
+            <div class="review-card">
+                <h3>Emily Davis</h3>
+                <p>We hired Benjamin for performance optimization, and the results were immediate. Our website now loads faster, providing an enhanced user experience.</p>
+                <p class="read-more">
+                    His ability to analyze code, identify bottlenecks, and implement effective solutions was impressive. Benjamin's work has had a significant impact on our site’s overall performance.
+                </p>
+                <button class="read-more-btn" onclick="toggleReadMore(this)">Read More</button>
+            </div>
+        </div>
+    <section id="contact">
+    <div class="form-container">
+        <h2>Contact Us</h2>
+        <form id="contactForm">
+          <label for="name">Your Name</label>
+          <input type="text" id="name" name="name" placeholder="Enter your name">
+          <div class="error" id="nameError"></div>
+    
+          <label for="email">Your Email</label>
+          <input type="email" id="email" name="email" placeholder="Enter your email">
+          <div class="error" id="emailError"></div>
+    
+          <label for="message">Message</label>
+          <textarea id="message" name="message" placeholder="Write your message" rows="5"></textarea>
+          <div class="error" id="messageError"></div>
+    
+          <button type="button" onclick="validateForm()">Send</button>
+        </form>
+      </div>
+    </section>
+
+    
+
+</body>
+<script src="main.js"></script>
+
+</html>
