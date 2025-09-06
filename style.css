@@ -383,3 +383,15 @@ body {
     font-size: 1.2rem;
   }
 }
+@media (max-width: 768px) {
+  #cont1 {
+    height: auto;              /* let height adjust naturally */
+    min-height: 100vh;         /* fill screen */
+    width: 100%;
+    border-radius: 0;
+    background-size: contain;  /* show whole image */
+    background-position: center top;
+  }
+}
+
+
